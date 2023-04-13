@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+}
+.header-content{
+    background-image: linear-gradient(to bottom, rgb(242, 76, 242),#e3b4c3);
+    color: rgb(240, 243, 232);
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-image: url('logo.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.logo-nav{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu{
+    background-image: linear-gradient(to bottom, 
+    #e3b4c3, rgb(242, 76, 242));
+}
+   
+nav{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+   
+.nav-items{
+    
+    text-decoration: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 3px;
+    
+}
+a{
+    width: 150px;
+    text-align: center;
+}
+a:hover{
+    background-color: #f94a82;
+    transition-duration: 0.3s;
+    border-radius: 8px;
+    
+}
+main{
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+}
+
+.img-home{
+    background-image: url('Design\ sem\ nome.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    max-width: 100%;
+    height: 300px;
+    background-color: lightgray;
+}
+article>h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container-destaques{
+    
+    
+}
+
+.destaque1{
+   width: 300px;
+   height: 300px;
+   background-color: lightgray;
+   padding-top: 20px;
+}
+#img1{
+    margin:auto;
+    background-color: lightcoral;
+    width: 240px;
+    height: 230px;
+    background-image: url('item01.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} 
+h3{
+    text-align: center;
+    font-size: 22px;
+    
+}
+p{
+    font-size: 22px;
+    text-align: center;
+}
+
+/*AQUI COMEÇA O SOBRE*/
+.contain-sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.sobre-img{
+    width: 250px;
+}
+.sobre-texto{
+    width: 300px;
+}
+
+
+    
+      
