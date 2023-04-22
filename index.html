@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Preciosa - Acessorios Femininos</title>
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <div class="header-content">
             <h1>Acessórios para cada tipo de mulher</h1>
@@ -17,14 +19,16 @@
        </div>
     </header>
     
-        <div class="nav-menu">
-            <nav>
-                <a href="" class="nav-items">Home</a>
-                <a href="sobre.html" class="nav-items">Sobre</a>
-                <a href="" class="nav-items">Produtos</a>
-            </nav>
-        </div>
-    
+        <menu>
+            <div class="hamburguer"><span id="burguer" class="material-icons" onclick="mostrarMenu()">menu</span></div>
+            <div  class="nav-menu">
+                <nav  id="expandir" >
+                    <a href="" class="nav-items">Home</a>
+                    <a href="sobre.html" class="nav-items">Sobre</a>
+                    <a href="" class="nav-items">Produtos</a>
+                </nav>
+            </div>
+        </menu>
     
     
     <main>
@@ -41,6 +45,23 @@
            
         </article>
     </main>
+    <script>
 
+        function mudarTamanho(){
+            if(window.innerWidth >=768){
+                expandir.style.display = 'flex'
+            }else{
+                expandir.style.display = 'none'
+            }
+        }
+        function mostrarMenu(){
+            if(expandir.style.display == 'none'){
+                expandir.style.display = 'flex'
+            }else{
+                expandir.style.display = 'none'
+            }
+        }
+           
+    </script>
 </body>
 </html>

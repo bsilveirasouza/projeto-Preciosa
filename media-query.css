@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@media screen and (max-width: 768px){
+   .hamburguer{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, 
+    #e3b4c3, rgb(242, 76, 242));
+   
+    
+   }
+    #burguer{
+        display:block;
+        color: white;
+        padding: 5px;
+        
+    }
+    #expandir{
+        display: none;
+    }
+    .nav-menu{
+       display: flex;
+       justify-content: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+        
